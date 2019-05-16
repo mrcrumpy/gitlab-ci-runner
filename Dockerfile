@@ -33,6 +33,7 @@ ENV PATH $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 
 RUN npm install -g webpack
 RUN npm install -g gulp
+RUN npm install --unsafe --unsafe-perms -g node-sass
 
 RUN echo "node: $(node -v), npm: $(npm -v), yarn: $(yarn -v), php: $(php -v)"
 
