@@ -10,7 +10,7 @@ RUN apt-get update -y
 RUN apt-get install -y --no-install-recommends apt-utils
 RUN apt-get dist-upgrade -y
 RUN apt-get install openssh-client -y
-RUN apt-get install -y zlib1g-dev
+RUN apt-get install -y zlib1g-dev unzip
 
 ENV NVM_DIR /usr/local/bin
 ENV NODE_VERSION 10.4.0
